@@ -1,0 +1,256 @@
+body {
+  font-family: Titr, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  font-size: 13px; /* اندازه فونت */
+  padding: 0px;
+  direction: rtl;
+  text-align: right;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: BLACK;
+  padding: 0px;
+  border-radius: 0px;
+  padding: 0px 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  padding: 7px 10px;
+  font-family: calibri, sans-serif;
+  background-color: #008000;
+  color: Black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008000;
+}
+
+#deleteButton {
+  background-color: #ffffff;
+  padding: 10px 10px;
+  margin-right: 0px;
+  border-radius: 0px;
+  border: 5px solid #ffffff;
+}
+
+#addExerciseButton {
+  background-color: #ffffff;
+  padding: 0px 0px;
+  margin-right: 0px;
+  border-radius: 0px;
+  border: 4px solid #ffffff;
+}
+
+#deleteExerciseButton {
+  background-color: #ffffff;
+  padding: 0px 0px;
+  margin-right: 0px;
+  border-radius: 0px;
+  border: 4px solid #ffffff;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -8px;
+  padding: 0px;
+  background-color: #f4f4f4;
+  border-radius: 0px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.form-row label {
+  margin-left: 8px;
+}
+
+body {
+  position: relative; /* برای موقعیت‌دهی درست watermark */
+}
+
+.watermark {
+  font-family: calibri, sans-serif;
+  position: absolute;
+  top: 50%; /* وسط صفحه */
+  left: 50%; /* وسط صفحه */
+  transform: translate(-50%, -50%) rotate(-40deg); /* کج کردن و وسط‌چین کردن */
+  font-size: 6rem; /* اندازه فونت watermark */
+  color: rgba(0, 0, 0, 0.12); /* رنگ و شفافیت */
+  pointer-events: none; /* جلوگیری از تاثیر watermark بر روی کلیک‌ها */
+  white-space: nowrap; /* جلوگیری از خط خوردن متن */
+}
+#sessionSelect {
+  padding: 0px 2px;
+  margin-right: -10px;
+  border-radius: 100px;
+  border: 0px solid #ccc;
+}
+
+#nameDropdown {
+  padding: 0px 2px;
+  margin-right: -10px;
+  border-radius: 100px;
+  border: 0px solid #ccc;
+}
+
+#addName {
+  padding: 4px 2px;
+  margin-right: 0px;
+   width: 15%;
+  border-radius: 100px;
+  border: 0px solid #ccc;
+}
+
+.exercise-input {
+  display: flex;
+  align-items: center; /* تراز عمودی */
+  gap: 10px; /* فاصله بین عناصر */
+  margin-top: 0px; /* فاصله بالای باکس */
+}
+
+#studentName,
+#sessionDate {
+  padding: 0px 10px;
+  margin-right: 0px;
+  border-radius: 100px;
+  border: 0px solid #ccc;
+  width: 100%;
+}
+
+#exerciseName,
+#exerciseLabel {padding: 0px 10px;
+  margin-right: 20px;
+  border-radius: 100px;
+  border: 0px solid #ccc;
+  width: 100%;}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: -10px;
+}
+
+th, td {
+  padding: 2px;
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+.small-col {
+  width: 30px; /* این عرض برای ستون های کوچک به کار می‌رود */
+  height: 0px;
+}
+
+.delete-btn {
+  padding: 0; /* حذف فضای داخلی دکمه حذف */
+  width: 0px; /* عرض دکمه حذف */
+  height: 0px; /* ارتفاع دکمه حذف */
+  font-size: 0px; /* اندازه فونت دکمه حذف */
+  line-height: 0px; /* تنظیم ارتفاع خط برای دکمه حذف */
+}
+
+input[type="text"], input[type="number"], select {
+  font-family: titr, sans-serif;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+}
+
+input.repet-input,
+input.weight-input,
+input.rest-input {
+  width: 30px; /* تنظیم عرض برای ورودی‌های کوچک */
+  padding: 10; /* حذف فضای داخلی باکس ورودی */
+  margin: 0; /* حذف فضای اضافی */
+  box-sizing: border-box;
+  height: 100%; /* تنظیم ارتفاع باکس ورودی به 100% */
+}
+
+/* حذف فاصله بین خطوط جدول */
+.repet-input,
+.weight-input,
+.rest-input{
+  line-height: 1; /* تنظیم ارتفاع خط برای حذف فاصله اضافی */
+}
+
+.small-input,
+.weight-input,
+.rest-input{
+  width: auto; /* عرض به صورت خودکار */
+  min-width: 125px; /* حداقل عرض */
+  padding: 5px; /* فاصله داخلی */
+  box-sizing: border-box; /* تنظیم باکس برای عرض */
+}
+
+/* حذف دکمه‌های افزایش و کاهش عدد در ورودی‌های عددی */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* برای مرورگر Firefox */
+}
+
+#notes {
+  margin-top: -15px;
+}
+
+#notes h3 {
+  margin-bottom: 0px;
+   padding-inline-start: 20px;
+}
+
+#notes ul {
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 30px;
+}
+
+.add-row-btn {
+  background-color: #ffffff;
+  color: white;
+  padding: 0px 0px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.add-row-btn:hover {
+  background-color: #ffffff;
+}
+
+#exerciseDropdown {
+  padding: 0px 60px;
+  margin-right: 20px;
+  border-radius: 100px;
+  border: 0px solid #ccc;
+}
+
+/* تنظیمات عرض برای تمام ستون‌ها به غیر از ستون حرکت */
+table td:nth-child(2), /* تکرار */
+table td:nth-child(3), /* وزن */
+table td:nth-child(4) { /* استراحت */
+  width: 30px; /* تنظیم عرض برای تمامی ستون‌ها به غیر از ستون حرکت */
+}
